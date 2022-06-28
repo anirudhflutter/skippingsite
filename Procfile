@@ -1,0 +1,1 @@
+web: gunicorn myskippingsite.wsgi --log-file -

@@ -1,0 +1,34 @@
+<!Doctype Html>  
+<Html>     
+<Head> 
+    <style>
+        div{
+  text-align: center;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+    </style>     
+<Title>     
+Registration Form  
+</Title>  
+</Head>  
+<Body>   
+    <div>
+        <h1>Register Yourself</h1>
+        
+    </div>
+    <div class="card">
+        <form method="POST" class="form-group">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-success">Register</button>
+        </form>
+      </div>  
+    <script>
+        alert('{{ message }}');
+    </script>
+</Body>   
+</Html>  

@@ -1,0 +1,38 @@
+<!Doctype Html>  
+<Html>     
+<Head>   
+    <style>
+.wrapper {
+    text-align: center;
+}
+
+.button {
+    position: absolute;
+}
+        </style>   
+<Title>     
+Products Page  
+</Title>  
+</Head>  
+<Body>
+    <div>
+        <h1>How do you wish to proceed ?</h1>
+    </div>   
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="Get help from expert" id="gridRadios1" value="option1" checked>
+      <label class="form-check-label" for="gridRadios1">
+          Contact Jump Rope Expert
+      </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="Get help from expert" id="gridRadios1" value="option1" checked>
+    <label class="form-check-label" for="gridRadios1">
+        Watch Videos and Learn
+    </label>
+</div>
+<div class="wrapper">
+  <button type = "button" id = "b1" class = "button" onclick="location.href='{% url 'optionsdata' %}'">Continue</button>
+</div>
+
+</Body>   
+</Html>  
